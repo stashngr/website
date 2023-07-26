@@ -45,7 +45,8 @@ header {
   padding: 5rem 20%;
   height: 250px;
   position: relative;
-  background: var(--theme-gradient);
+  background: var(--theme-pattern);
+  background-size: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,12 +54,12 @@ header {
 
 header::after, .download-section::after {
   content: "";
-  background: var(--theme-pattern);
-  background-size: 70%;
+  background: var(--theme-gradient);
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 .bg-header {
@@ -206,7 +207,10 @@ section.no-mb {
 }
 
 .download-section {
-  background-image: var(--theme-gradient);
+  /* background-image: var(--theme-gradient); */
+  background: var(--theme-pattern);
+  background-size: 70%;
+  overflow: hidden;
   position: relative;
   color: #ffffff;
   font-family: var(--font-general-sans);
@@ -220,6 +224,10 @@ section.no-mb {
 
 .download-section .footer-phone {
   width: 50%;
+}
+
+.download-section a img {
+  border-radius: 5px;
 }
 
 footer {
