@@ -32,6 +32,10 @@ a {
   height: 40px;
 }
 
+.navbar-toggler {
+  color: var(--theme-solid) !important;
+}
+
 .btn-theme {
   color: #ffffff;
   background: var(--theme-gradient);
@@ -207,7 +211,6 @@ section.no-mb {
 }
 
 .download-section {
-  /* background-image: var(--theme-gradient); */
   background: var(--theme-pattern);
   background-size: 70%;
   overflow: hidden;
@@ -222,16 +225,19 @@ section.no-mb {
   font-weight: bold;
 }
 
-.download-section .footer-phone {
+.download-store-logos {
+  margin-top: 3rem;
+}
+
+.download-section-right img {
   width: 50%;
 }
 
-.download-section a img {
+.download-store-logos img {
   border-radius: 5px;
 }
 
 footer {
-  padding: 3rem 2rem;
   font-family: var(--font-general-sans);
   font-size: 12px;
 }
@@ -313,11 +319,7 @@ footer a {
   color: #828282;
 }
 
-.footer-end-links {
-  text-align: right;
-}
-
-.footer-end-links a {
+.footer-end-links a:last-child {
   margin-left: 20px;
 }
 
@@ -353,7 +355,8 @@ footer a {
 }
 
 .hero .dashboard img {
-  width: 90%;
+  width: 75%;
+  margin-bottom: 50px;
 }
 
 .hero .store-logos img {
@@ -396,19 +399,6 @@ footer a {
 .info-card {
   display: flex;
   align-items: center;
-  padding: 4rem 2rem;
-}
-
-.info-card:first-child {
-  padding-top: 0;
-}
-
-.info-card-left {
-  padding-right: var(--info-card-padding);
-}
-
-.info-card-right {
-  padding-left: var(--info-card-padding);
 }
 
 .info-card-img {
@@ -992,4 +982,204 @@ footer a {
 .maintenance a.btn {
   font-weight: 600;
   line-height: 50px;
+}
+
+/* NON-MOBILE VIEWS */
+@media (min-width: 576px) {
+  .features .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .info-card {
+    padding: 4rem 2rem; 
+  }
+
+  .info-card:first-child {
+    padding-top: 0;
+  }
+  
+  .info-card-left {
+    padding-right: var(--info-card-padding);
+  }
+
+  .info-card-right {
+    padding-left: var(--info-card-padding);
+  }
+
+  .no-ps {
+    padding-left: 0 !important;
+  }
+
+  .no-pe {
+    padding-right: 0 !important;
+  }
+
+  .download-section-left {
+    padding-right: 3rem;
+  }
+
+  .download-store-logos {
+    padding-bottom: 30px;
+  }
+
+  footer {
+    padding: 3rem 2rem;
+  }
+
+  .footer-end-links {
+    text-align: right;
+  }
+}
+
+
+/* MOBILE VIEWS */
+@media (max-width: 575.98px) {
+  .navbar-auth-links a {
+    display: block;
+    text-align: left;
+  }
+
+  .pre-testimonial p {
+    padding: 0 30px;
+  }
+
+  .testimonial-img-box {
+    padding: 0;
+  }
+
+  .testimonial-img-box img {
+    width: 100%;
+    border-width: 10px;
+  }
+
+  .testimonial-content {
+    padding-right: 0;
+  }
+
+  .testimonial-content h5, .testimonial-content span {
+    display: block;
+    text-align: center;
+  }
+
+  .rating {
+    text-align: center;
+  }
+
+  .download-section {
+    background-size: cover;
+  }
+
+  .download-section-left p {
+    margin-top: 20px !important;
+  }
+  
+  .download-store-logos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .download-store-logos img {
+    height: 35px;
+  }
+
+  .download-section-right {
+    margin-top: 20px;
+  }
+
+  .hero::after {
+    clip-path: none;
+  }
+
+  .hero .row {
+    flex-direction: column-reverse;
+  }
+
+  .hero-text-box {
+    margin-top: 0;
+    text-align: center;
+    padding: 0px 0px;
+  }
+
+  .hero h1 span {
+    display: inline !important;
+  }
+
+  .hero .store-logos img {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .hero .licenses {
+    text-align: center;
+  }
+  
+  .hero .licenses img {
+    width: 100px;
+  }
+
+  .hero .dashboard img {
+    width: 100%;
+  }
+
+  .points {
+    padding: 20px;
+  }
+
+  .points .stash-icon {
+    height: 40px;
+  }
+
+  .info-card {
+    margin-bottom: 30px;
+  }
+
+  .info-card:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0px;
+  }
+
+  .info-img-right {
+    flex-direction: column-reverse;
+  }
+
+  .info-section {
+    padding-top: 0 !important
+  }
+
+  .info-card-text {
+    margin-top: 10px;
+  }
+
+  .info-card-img {
+    padding: 3rem 0;
+  }
+
+  .footer-logo, .footer-links-group, .footer-newsletter-box {
+    margin-top: 20px;
+  }
+
+  .footnote {
+    font-size: 12px;
+  }
+
+  .copyright-and-links {
+    flex-direction: column-reverse;
+  }
+
+  .copyright {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  header {
+    padding: 1rem 20px;
+    height: 150px;
+  }
+
+  .header-content {
+    font-size: 1.3rem;
+  }
 }
