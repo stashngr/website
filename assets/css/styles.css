@@ -333,6 +333,7 @@ footer a {
   background: var(--theme-pattern);
   background-size: contain;
   position: relative;
+  
 }
 
 .hero::after {
@@ -346,21 +347,28 @@ footer a {
   background-image: var(--theme-gradient);
   background-repeat: repeat;
   background-position: center;
+  
 }
 
 .hero-text-box {
   color: #ffffff;
-  padding-left: 7.5%;
+  padding-left: 20%;
   margin-top: 2rem;
+  
+}
+
+.hero-text-box p, .hero-text-box .store-logos {
+  margin-top: 2rem !important;
 }
 
 .hero .dashboard img {
   width: 75%;
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
 .hero .store-logos img {
   width: 40%;
+  
 }
 
 .points {
@@ -480,12 +488,14 @@ footer a {
   background: #6B5AED0D;
   position: relative;
   height: 450px;
+  border-radius: 40px
 }
 
 .features .info-card-img img {
   width: 50%;
   position: absolute;
   bottom: 0;
+  border-radius: 40px
 }
 
 
@@ -1101,6 +1111,7 @@ footer a {
     margin-top: 0;
     text-align: center;
     padding: 0px 0px;
+    
   }
 
   .hero h1 span {
@@ -1155,6 +1166,9 @@ footer a {
 
   .info-card-img {
     padding: 3rem 0;
+    border-radius: 50px
+ 
+
   }
 
   .footer-logo, .footer-links-group, .footer-newsletter-box {
@@ -1182,4 +1196,13 @@ footer a {
   .header-content {
     font-size: 1.3rem;
   }
+}
+
+.dropdown-menu {
+display: none;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  animation: none;
 }
