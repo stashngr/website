@@ -171,6 +171,7 @@ section.no-mb {
 .testimonial-content p {
   text-align: justify;
   font-size: 0.9rem;
+  width: 96%
 }
 
 .grey-text {
@@ -366,7 +367,7 @@ footer a {
 
 .hero-text-box p,
 .hero-text-box .store-logos {
-  margin-top: 5rem !important;
+  margin-top: 5rem;
 }
 
 .hero .dashboard img {
@@ -1024,7 +1025,6 @@ footer a {
   .hero-text-box p {
     margin-top: 2rem !important;
   }
-
 }
 
 /* NON-MOBILE VIEWS */
@@ -1081,6 +1081,10 @@ footer a {
   .hero .dashboard img {
     width: 75%;
     margin-bottom: 20px;
+  }
+
+  .store-logos {
+    margin-top: 3rem !important;
   }
 
   .navbar-auth-links a {
