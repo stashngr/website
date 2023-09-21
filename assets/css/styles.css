@@ -386,13 +386,17 @@ footer a:hover {
 
 }
 
+.me-4 {
+  margin-right: 0.2rem !important;
+}
+
 .hero-text-box p {
-  margin-top: 0rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 .hero-text-box .store-logos {
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 0rem;
 
 }
