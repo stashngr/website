@@ -106,9 +106,13 @@ header::after,
   text-align: center;
 }
 
+h1, .h1 {
+  font-size: 3.0rem;
+}
+
 .page-title h1 {
   font-weight: 600;
-  font-size: 3.0rem;
+  font-size: 4.0rem;
   margin-top: 20px;
 }
 
