@@ -1,6 +1,6 @@
-# provider "acme" {
-#   server_url = "${var.acme_server_url}"
-# }
+provider "acme" {
+  server_url = "${var.acme_server_url}"
+}
 
 # provider "aws" {
 #   alias   = "us_east_1"
