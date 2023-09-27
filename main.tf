@@ -114,8 +114,8 @@ resource "aws_cloudfront_distribution" "frontend_cf_distribution" {
   is_ipv6_enabled = true
 
   default_root_object = "index.html"
-  # aliases = []
-  aliases = ["${var.frontend_domain}"]
+  aliases = []
+  # aliases = ["${var.frontend_domain}"]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
@@ -162,9 +162,9 @@ resource "aws_cloudfront_distribution" "frontend_cf_distribution" {
 
   viewer_certificate {
     cloudfront_default_certificate = true
-    acm_certificate_arn = "${aws_acm_certificate.frontend_certificate.arn}"
-    minimum_protocol_version = "TLSv1"
-    ssl_support_method = "sni-only"
+    # acm_certificate_arn = "${aws_acm_certificate.frontend_certificate.arn}"
+    # minimum_protocol_version = "TLSv1"
+    # ssl_support_method = "sni-only"
   }
 
   retain_on_delete = true
