@@ -1,8 +1,8 @@
 terraform {
   cloud {
-    organization = "WRKR"
+    organization = "Stash Payments"
     workspaces {
-      name = "stashng-website"
+      name = "stash-website"
     }
   }
 
