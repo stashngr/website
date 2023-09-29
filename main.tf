@@ -114,7 +114,7 @@ resource "aws_cloudfront_distribution" "frontend_cf_distribution" {
   is_ipv6_enabled = true
 
   default_root_object = "index.html"
-  aliases = []
+  # aliases = []
   aliases = ["${var.frontend_domain}"]
 
   default_cache_behavior {
