@@ -11,15 +11,14 @@ jobs:
       - run:
           name: 'Create directory'
           command: mkdir -p ~/my-repo
-      - checkout:
-          path: ~/my-repo
+      - checkout
       - aws-s3/copy:
           arguments: '--recursive'
-          from: my-repo
+          from: .
           to: "s3://stashng-website"
       - run:
           name: 'List current directory'
-          command: ls my-repo
+          command: ls
       - run: echo "Successfully deployed to the bucket accessible to CloudFront"
 
 workflows:
