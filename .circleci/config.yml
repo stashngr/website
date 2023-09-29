@@ -9,11 +9,11 @@ jobs:
     steps:
       - aws-s3/copy:
           arguments: '--recursive'
-          from: .
+          from: ~/project/
           to: "s3://stashng-website"
       - run: 
           name: 'List current directory'
-          command: ls .
+          command: ls ~/project/
       - run: echo "Successfully deployed to bucket accessible to cloudfront"
 workflows:
   version: 2
