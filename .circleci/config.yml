@@ -7,13 +7,15 @@ jobs:
     executor:
       name: node/default
     steps:
+      - checkout:
+          path: ~/my-repo
       - aws-s3/copy:
           arguments: '--recursive'
-          from: $CIRCLE_WORKING_DIRECTORY
+          from: my-repo
           to: "s3://stashng-website"
       - run: 
           name: 'List current directory'
-          command: ls $CIRCLE_WORKING_DIRECTORY
+          command: ls my-repo
       - run: echo "Successfully deployed to bucket accessible to cloudfront"
 workflows:
   version: 2
