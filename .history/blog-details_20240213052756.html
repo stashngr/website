@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
-    <title>Contact Us</title>
+
+    <title>Blog Details</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.css"/>
 
@@ -76,52 +77,92 @@
         </div>
     </nav>
 
-    <header class="bg-header">
-    </header>
-    
-    <section class="contact-page-content">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6 pe-5">
-                    <div class="contact-box-msg">
-                        <h3>Let's Talk</h3>
-                        <p>
-                            Please feel free to utilize our contact form to establish communication, and rest assured that we will promptly respond to address any concerns or inquiries you may have.
-                        </p>
+    <section class="no-bg-header">
+        <div class="container pt-2">
+            <div class="header-title">Stay Updated</div>
 
-                        <h3 class="mt-5">Send Email</h3>
-                        <p>support@stashng.com</p>
+            <div class="row mt-5">
+                <div class="col-4 header-box1">
+                    <img src="./assets/images/blog-header-img1.jpg" alt="">
+                </div>
+                <div class="col-6 header-box2">
+                    <img src="./assets/images/blog-header-img2.jpg" alt="">
+                </div>
+                <div class="col-2 header-box3">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="post-details-wrapper">
+        <div class="container">
+            <div class="post-details">
+                <div class="post-meta">
+                    <div class="row">
+                        <div class="col-sm-8 meta-content">
+                            <div class="meta-category">News</div>
+                            <div class="meta-author">By Mark Tuchel</div>
+                            <div class="meta-read-length">
+                                <i class="fa fa-circle"></i>
+                                <span class="read-length">7 min read</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 meta-icons">
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                            <a href=""><i class="fa fa-link"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 ps-5">
-                    <form action="" id="contact-form">
-                        <div>
-                            <label for="fullname" class="form-label">Your Full Name</label>
-                            <input type="text" id="fullname" class="form-control" name="fullname">
-                        </div>
+                <div class="post-title">
+                    Stash launches new banking app  with unique digital banking experience in Nigeria
+                </div>
+
+                <div class="post-content">
+                    <p>In Nigeria, a financial revolution was brewing. Infiniti Segment, a forward-thinking company, aimed to transform access to banking services. They launched "Infiniti," a groundbreaking agency banking brand. This innovative service utilized unique Point of Sale (POS) terminals designed to bring banking closer to the masses in Nigeria.</p>
+
+                    <div class="post-image-box">
+                        <img src="./assets/images/light-bg-lg.png" alt="">
+                    </div>
+
+                    <p>Infiniti changed the game by providing banking services at customers' fingertips, no matter their location. With these futuristic POS terminals, individuals could conduct transactions conveniently in bustling markets, remote villages, or even at their doorstep. Long queues and distant bank branches became a thing of the past.</p>
+
+                    <p>One inspiring example was Uche, an entrepreneur who set up shop in his village with an Infiniti Smart POS terminal. He became a local hero, offering cash deposits, withdrawals, and fund transfers to his community. Infiniti also brought financial inclusion to the unbanked, allowing them to benefit from a secure financial system.</p>
                         
-                        <div>
-                            <label for="email" class="form-label">Your Valid Email</label>
-                            <input type="email" id="email" class="form-control" name="email">
+                    <p>Beyond basic transactions, Infiniti Smart POS terminals supported advanced services like loan applications and bill payments. Customers embraced this era of accessible banking, highlighting the power of innovation to positively transform lives.<br>
+                    As Infiniti expands its network, accessible banking for all becomes a reality. It symbolizes hope, bridging gaps, and empowering communities. It is a transformative tale of a visionary company rewriting the rules of traditional banking and shaping Nigeria's future, one transaction at a time.</p>
+
+                    <div class="post-image-box">
+                        <img src="./assets/images/light-bg-lg.png" alt="">
+                    </div>
+
+                    <p>Infiniti changed the game by providing banking services at customers' fingertips, no matter their location. With these futuristic POS terminals, individuals could conduct transactions conveniently in bustling markets, remote villages, or even at their doorstep. Long queues and distant bank branches became a thing of the past.</p>
+
+                    <p>One inspiring example was Uche, an entrepreneur who set up shop in his village with an Infiniti Smart POS terminal. He became a local hero, offering cash deposits, withdrawals, and fund transfers to his community. Infiniti also brought financial inclusion to the unbanked, allowing them to benefit from a secure financial system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Join the Stash community</h3>
+
+                    <form action="" class="row">
+                        <div class="form-element col-sm-8">
+                            <input type="email" class="form-control" placeholder="Enter your email..">
                         </div>
-                        
-                        <div>
-                            <label for="phone_number" class="form-label">Phone Number</label>
-                            <input type="text" id="phone_number" class="form-control" name="phone_number">
-                        </div>
-                        
-                        <div>
-                            <label for="heard_about_us" class="form-label">How did you hear about us?</label>
-                            <select id="heard_about_us" class="form-select" name="heard_about_us">
-                                <option selected disabled>Select where you heard about us</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="form-label">Message</label>
-                            <textarea name="message" class="form-control" id="message" rows="15"></textarea>
+        
+                        <div class="form-element col-sm-4">
+                            <button type="button" class="btn btn-theme d-block w-100">Submit</button>
                         </div>
                     </form>
+
+                    <p>Subscribe to our Newsletter today!  *You can unsubscribe anytime.</p>
                 </div>
             </div>
         </div>
@@ -191,10 +232,10 @@
             </div>
 
             <div class="mt-4 social-icons">
-                <!-- <a href="#" class="rounded-icon"><i class="fa fa-facebook"></i></a> -->
-                <a href="https://www.linkedin.com/company/stashbox/about/"><i class="fa fa-linkedin-square"></i></a>
-                <a href="https://twitter.com/StashBox_ng"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.instagram.com/stashbox_ng/"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="rounded-icon"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
             </div>
 
             <div class="mt-4 footnote">
