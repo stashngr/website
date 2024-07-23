@@ -1,6 +1,6 @@
 # The application's name
 variable "app" {
-  default = "stashng"
+  default = "stashng-web"
 }
 
 # The environment that is being built
@@ -9,7 +9,7 @@ variable "environment" {
 }
 
 variable "region" {
-  default = "eu-central-1"
+  default = "us-east-2"
 }
 
 variable "logs_retention_in_days" {
@@ -32,5 +32,5 @@ variable "acme_server_url" {
 }
 
 variable "domain_r53_host_id" {
-  default = "Z0651542ED64NKTICGZU"
+  default = "Z05086912FFC07M3SJWTF"
 }

@@ -50,7 +50,7 @@ locals {
 }
 
 resource "aws_s3_bucket" "frontend_bucket" {
-  bucket = "stashng-website"
+  bucket = "stashng-website-v2"
 
   tags = {
     Name = "devops"
