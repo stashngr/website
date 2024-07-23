@@ -115,7 +115,7 @@ resource "aws_cloudfront_distribution" "frontend_cf_distribution" {
 
   default_root_object = "index.html"
   # aliases = []
-  # aliases = ["${var.frontend_domain}"]
+  aliases = ["${var.frontend_domain}"]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
